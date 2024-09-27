@@ -16,10 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Primeira Imagem -->
-
-            <!-- Segunda Imagem -->
-
             <ImageView
                 android:id="@+id/image1"
                 android:layout_width="415dp"
@@ -32,10 +28,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@mipmap/parqueimage" />
-
-            <!-- Descrição do local -->
-
-            <!-- Botão Ver no Mapa -->
 
             <ImageView
                 android:id="@+id/image2"
@@ -80,7 +72,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnVerMapa" />
 
-            <!-- Botão Telefonar -->
             <Button
                 android:id="@+id/btnTelefonar"
                 android:layout_width="wrap_content"

@@ -14,13 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Primeira Imagem -->
-
-            <!-- Segunda Imagem -->
-
-            <!-- Descrição do local -->
-
-            <!-- Botão Ver no Mapa -->
 
             <ImageView
                 android:id="@+id/image1"
@@ -62,22 +55,13 @@
                 android:id="@+id/btnVerMapa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="Ver no Mapa"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/descricao" />
+                app:layout_constraintTop_toBottomOf="@id/descricao" />
 
-            <Button
-                android:id="@+id/btnTelefonar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Telefonar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnAbrirSite" />
-
+            <!-- Botão Abrir Site -->
             <Button
                 android:id="@+id/btnAbrirSite"
                 android:layout_width="wrap_content"
@@ -86,7 +70,18 @@
                 android:text="Abrir Site"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnVerMapa" />
+                app:layout_constraintTop_toBottomOf="@id/btnVerMapa" />
+
+            <!-- Botão Telefonar -->
+            <Button
+                android:id="@+id/btnTelefonar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Telefonar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAbrirSite" />
 
             <ImageView
                 android:id="@+id/imageView2"
