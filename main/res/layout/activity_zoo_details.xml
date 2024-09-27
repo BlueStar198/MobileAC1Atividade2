@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Primeira Imagem -->
+
+            <!-- Segunda Imagem -->
+
+            <!-- Descrição do local -->
+
+            <!-- Botão Ver no Mapa -->
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="370dp"
+                android:layout_height="272dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Imagem do Zoológico de Sorocaba"
+                android:src="@mipmap/zooimage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/zooimage" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="366dp"
+                android:layout_height="237dp"
+                android:contentDescription="Imagem 2 do Zoológico de Sorocaba"
+                android:src="@mipmap/zooimage2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image1"
+                app:srcCompat="@mipmap/zooimage2" />
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="O Zoológico de Sorocaba é um dos maiores do Brasil, com diversas espécies de animais e um ambiente agradável para famílias."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <Button
+                android:id="@+id/btnVerMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Ver no Mapa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descricao" />
+
+            <Button
+                android:id="@+id/btnTelefonar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Telefonar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAbrirSite" />
+
+            <Button
+                android:id="@+id/btnAbrirSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Abrir Site"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnVerMapa" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="309dp"
+                android:layout_height="271dp"
+                app:layout_constraintTop_toBottomOf="@+id/image2"
+                app:srcCompat="@mipmap/zooimage3"
+                tools:layout_editor_absoluteX="51dp" />
+
+            <!-- Botão Abrir Site -->
+
+            <!-- Botão Telefonar -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

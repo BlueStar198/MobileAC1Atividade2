@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="-111dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Primeira Imagem -->
+
+            <!-- Segunda Imagem -->
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="415dp"
+                android:layout_height="252dp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="Imagem do Parque Chico Mendes"
+                android:src="@mipmap/parqueimage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/parqueimage" />
+
+            <!-- Descrição do local -->
+
+            <!-- Botão Ver no Mapa -->
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="455dp"
+                android:layout_height="226dp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="Imagem 2 do Parque Chico Mendes"
+                android:src="@mipmap/parqueimage2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image1"
+                app:srcCompat="@mipmap/parqueimage2" />
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="O Parque Natural Municipal Chico Mendes é uma grande área verde em Sorocaba, com trilhas, playgrounds e áreas de piquenique."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <Button
+                android:id="@+id/btnVerMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver no Mapa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descricao" />
+
+            <!-- Botão Abrir Site -->
+            <Button
+                android:id="@+id/btnAbrirSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abrir Site"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnVerMapa" />
+
+            <!-- Botão Telefonar -->
+            <Button
+                android:id="@+id/btnTelefonar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefonar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAbrirSite" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="416dp"
+                android:layout_height="192dp"
+                app:layout_constraintTop_toBottomOf="@+id/image2"
+                app:srcCompat="@mipmap/parqueimage3"
+                tools:layout_editor_absoluteX="-5dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
